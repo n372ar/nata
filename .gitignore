@@ -1,0 +1,15 @@
+# Инициализация репозитория
+git init
+
+# Создание файла .gitignore (рекомендуется)
+echo -e "__pycache__/\n*.pyc\n*.pyo\n.history.json" > .gitignore
+
+# Добавление файлов и первый коммит
+git add .
+git commit -m "feat: initial commit - Random Task Generator with GUI, JSON history & filters"
+
+# Привязка к удалённому репозиторию (замените URL на свой)
+git remote add origin https://github.com/ВАШ_НИК/random-task-generator.git
+
+# Отправка в ветку main/master
+git push -u origin main
